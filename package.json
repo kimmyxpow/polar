@@ -1,13 +1,12 @@
 {
-  "name": "@convex-dev/polar",
-  "description": "A Polar component for Convex.",
-  "repository": "github:get-convex/polar",
-  "homepage": "https://github.com/get-convex/polar#readme",
+  "name": "@powroom/polar",
+  "description": "A Polar component for Convex. Fork of @convex-dev/polar with support for latest Polar API price types and benefits.",
+  "repository": "github:kimmyxpow/polar",
+  "homepage": "https://github.com/kimmyxpow/polar#readme",
   "bugs": {
-    "email": "support@convex.dev",
-    "url": "https://github.com/get-convex/polar/issues"
+    "url": "https://github.com/kimmyxpow/polar/issues"
   },
-  "version": "0.7.3",
+  "version": "0.7.4",
   "license": "Apache-2.0",
   "keywords": [
     "convex",
@@ -136,3 +135,4 @@
     "standardwebhooks": "^1.0.0"
   }
 }
+

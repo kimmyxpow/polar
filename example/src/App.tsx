@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { AlertCircle } from "lucide-react";
 import { useMutation, useQuery, useAction } from "convex/react";
 import { api } from "../convex/_generated/api";
-import { CheckoutLink, CustomerPortalLink } from "@convex-dev/polar/react";
+import { CheckoutLink, CustomerPortalLink } from "@powroom/polar/react";
 import {
   insertTodoOptimistic,
   completeTodoOptimistic,
@@ -16,13 +16,13 @@ export default function TodoList() {
   const todos = useQuery(api.example.listTodos);
   const products = useQuery(api.example.getConfiguredProducts);
   const insertTodo = useMutation(api.example.insertTodo).withOptimisticUpdate(
-    insertTodoOptimistic
+    insertTodoOptimistic,
   );
   const completeTodo = useMutation(
-    api.example.completeTodo
+    api.example.completeTodo,
   ).withOptimisticUpdate(completeTodoOptimistic);
   const deleteTodo = useMutation(api.example.deleteTodo).withOptimisticUpdate(
-    deleteTodoOptimistic
+    deleteTodoOptimistic,
   );
   const cancelSubscription = useAction(api.example.cancelCurrentSubscription);
   const changeSubscription = useAction(api.example.changeCurrentSubscription);
@@ -58,7 +58,7 @@ export default function TodoList() {
     const action = getButtonText(productId);
     if (
       confirm(
-        `Are you sure you want to ${action.toLowerCase()} your subscription? Any price difference will be prorated.`
+        `Are you sure you want to ${action.toLowerCase()} your subscription? Any price difference will be prorated.`,
       )
     ) {
       await changeSubscription({ productId });
@@ -68,7 +68,7 @@ export default function TodoList() {
   const handleCancelSubscription = async () => {
     if (
       confirm(
-        "Are you sure you want to cancel your subscription? This will immediately end your subscription and any remaining time will be prorated and refunded."
+        "Are you sure you want to cancel your subscription? This will immediately end your subscription and any remaining time will be prorated and refunded.",
       )
     ) {
       await cancelSubscription({ revokeImmediately: true });
@@ -81,7 +81,7 @@ export default function TodoList() {
     if (todo) {
       if (isAtMaxTodos) {
         alert(
-          "You've reached the maximum number of todos for your current plan. Please upgrade to add more!"
+          "You've reached the maximum number of todos for your current plan. Please upgrade to add more!",
         );
         return;
       }

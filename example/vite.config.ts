@@ -11,6 +11,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    exclude: ["@convex-dev/polar/react"],
+    exclude: ["@powroom/polar/react"],
   },
 });

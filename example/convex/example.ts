@@ -1,4 +1,4 @@
-import { Polar } from "@convex-dev/polar";
+import { Polar } from "@powroom/polar";
 import { api, components } from "./_generated/api";
 import { QueryCtx, mutation, query } from "./_generated/server";
 import { v } from "convex/values";

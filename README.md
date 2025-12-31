@@ -1,4 +1,12 @@
-# Convex Polar Component [![npm version](https://badge.fury.io/js/@convex-dev%2Fpolar.svg)](https://badge.fury.io/js/@convex-dev%2Fpolar)
+# Convex Polar Component [![npm version](https://badge.fury.io/js/@powroom%2Fpolar.svg)](https://badge.fury.io/js/@powroom%2Fpolar)
+
+> **Note**: This is a fork of
+> [@convex-dev/polar](https://github.com/get-convex/polar) with support for the
+> latest Polar API price types and benefits.
+>
+> **Workaround for**:
+> [get-convex/polar#33](https://github.com/get-convex/polar/issues/33) - Support
+> for usage-based billing and latest Polar API features.
 
 Add subscriptions and billing to your Convex app with [Polar](https://polar.sh).
 
@@ -101,7 +109,6 @@ to:
    `https://verb-noun-123.convex.site/polar/events`
 
    Enable the following events:
-
    - `product.created`
    - `product.updated`
    - `subscription.created`

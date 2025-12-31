@@ -51,5 +51,5 @@ export declare const internal: FilterApi<
 >;
 
 export declare const components: {
-  polar: import("@convex-dev/polar/_generated/component.js").ComponentApi<"polar">;
+  polar: import("@powroom/polar/_generated/component.js").ComponentApi<"polar">;
 };
